@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>W7_2211102328</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <style>
     body {
       display: flex;
@@ -39,6 +40,26 @@
       transition: background-color 0.2s ease;
     }
 
+    .btn-secondary:hover {
+      background-color: #6c757d !important;
+    }
+
+    .btn-danger:hover {
+      background-color: #c82333 !important;
+    }
+
+    .btn-warning:hover {
+      background-color: #f0ad4e !important;
+    }
+
+    .btn-success:hover {
+      background-color: #218838 !important;
+    }
+
+    .btn-primary:hover {
+      background-color: #004085 !important;
+    }
+
     .btn-secondary:active {
       background-color: #ffdd00 !important;
     }
@@ -66,11 +87,31 @@
   <p>2211102328</p>
 
   <div class="button-group">
-    <button class="btn btn-secondary btn-custom">MODAL</button>
+    <button class="btn btn-secondary btn-custom" data-bs-toggle="modal" data-bs-target="#infoModal">MODAL</button>
     <button class="btn btn-danger btn-custom">red</button>
     <button class="btn btn-warning text-dark btn-custom">yellow</button>
     <button class="btn btn-success btn-custom">green</button>
     <button class="btn btn-primary btn-custom">blue</button>
+  </div>
+
+  <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content rounded-4">
+        <div class="modal-header">
+          <h5 class="modal-title" id="infoModalLabel">Modul</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Nama Panjang:</strong> Azfa Fairuzia H</p>
+          <p><strong>Nama Panggilan:</strong> Azfa/fa</p>
+          <p><strong>NIM:</strong> 2211102328</p>
+          <p><strong>Hobi:</strong> watching movies</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Tutup</button>
+        </div>
+      </div>
+    </div>
   </div>
 
 </body>
